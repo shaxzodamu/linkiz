@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "linkiz",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-10-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  // Baza birinchi deployda avtomatik yaratiladi (wrangler >= 4.45).
+  "d1_databases": [{ "binding": "DB", "database_name": "linkiz-db" }],
+  "observability": { "enabled": true }
+}
